@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --fs-size-sm: 0.8rem;
+  --fs-size-md: 1rem;
+  --fs-size-l: 1.2rem;
+  --cl-black: #030303;
+  --cl-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--fs-size-md);
+}
+
+h3 {
+  font-size: var(--fs-size-l);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+  background-color: var(--cl-black);
+  > a {
+    color: var(--cl-white);
+  }
+}
+
+.nav__link {
+  height: 30px;
+  margin: 0 1rem;
+
+  > a:first-child {
+    display: grid;
+    place-items: center;
+    margin-top: 5px;
+  }
+}
+
+.dropdown__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+  border: transparent;
+  background-color: var(--cl-black);
+  color: var(--cl-white);
+  font: inherit;
+  text-transform: uppercase;
+}
+
+.dropdown__container {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cl-black);
+  visibility: hidden;
+  > a {
+    font-size: var(--fs-size-sm);
+    color: var(--cl-white);
+    margin: 0 10px;
+  }
+}
+
+.active {
+  visibility: visible;
+}
+
+.actions__content {
+  text-align: center;
+  margin-top: 4rem;
+}

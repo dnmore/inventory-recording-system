@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', {title: 'All Categories'}) %>
+    
+  </head>
+  <body>
+    <%- include('includes/navigation') %>
+
+    <div class="categories__container">
+      <h1>All Categories</h1>
+      <% if(!categories || categories.length === 0) { %>
+      <p>No categories found, maybe start creating some?</p>
+      <a href="/new-category">Create new category</a>
+      <% } else { %> <% for (const category of categories) { %> <%-
+      include('includes/category__details', { category: category}) %> <% } %>
+    </div>
+    <% } %>
+  </body>
+</html>

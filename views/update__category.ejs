@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', { title: 'Update category' }) %>
+  </head>
+
+  <body>
+    <%- include('includes/navigation') %>
+    <div class="form__container">
+      <form action="/categories/<%= category.id %>/edit" method="post">
+        <h2>Update category</h2>
+        <div class="form__item">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            value="<%= category.title %>"
+            required
+          />
+        </div>
+
+        <button class="action">Update Category</button>
+      </form>
+    </div>
+  </body>
+</html>

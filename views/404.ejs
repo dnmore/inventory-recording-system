@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', { title: 'Not found!' }) %>
+  </head>
+
+  <body>
+    <%- include('includes/navigation') %>
+      <section class="error__container">
+        <div class="error__title">Page Not Found</div>
+        <div class="error__description">
+          We can't seem to find that page. It might have been removed or doesn't
+          exist anymore.
+        </div>
+        <button class="action-home"><a href="/">Go Home</a></button>
+      </section>
+    
+  </body>
+</html>

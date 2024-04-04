@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <%- include('includes/head', { title: 'Add new item' }) %>
+    
+  </head>
+
+  <body>
+    <%- include('includes/navigation') %>
+    <div class="form__container">
+      <form action="/items" method="post">
+        <h2>Add a new item</h2>
+        <div class="form__item">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form__item">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" required rows="5"></textarea>
+        <div class="form__item">
+          <label for="cost">Cost</label>
+          <input type="number" step="0.01" id="cost" name="cost" required />
+        </div>
+        <div class="form__item">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" required />
+          </div>
+        <div class="form__item">
+          <label for="category">Select Category</label>
+          <select id="category" name="category">
+            <% for (const category of categories) { %>
+            <option value="<%= category.id %>"><%= category.title %></option>
+            <% } %>
+          </select>
+        </div>
+        <button class="action">Add Item</button>
+      </form>
+    </div>
+  </body>
+</html>

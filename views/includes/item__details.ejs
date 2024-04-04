@@ -1,0 +1,15 @@
+<article class="item__card">
+  <h2><%= item.name %></h2>
+  <p><%= item.description %></p>
+  <p>Cost: <%= item.cost %></p>
+  <p>Quantity: <%= item.quantity %></p>
+  <p>Category: <%= item.category_title %></p>
+
+  <div class="items__actions">
+    <a href="/items/<%= item.id %>/edit">Edit</a>
+
+    <form action="/items/<%= item.id %>/delete" method="post">
+      <button class="action-alt">Delete</button>
+    </form>
+  </div>
+</article>
