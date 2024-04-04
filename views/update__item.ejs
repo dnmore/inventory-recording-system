@@ -5,9 +5,13 @@
 
   <body>
     <%- include('includes/navigation') %>
+    <div class="heading">
+      <h3>Update Item</h3>
+    </div>
+
     <div class="form__container">
       <form action="/items/<%= item.id %>/edit" method="post">
-        <h2>Update item</h2>
+        
         <div class="form__item">
           <label for="name">Name</label>
           <input
@@ -20,12 +24,12 @@
         </div>
         <div class="form__item">
           <label for="description">Description</label>
-          <textarea id="description" name="description" required rows="5">
+          <textarea id="description" name="description" required maxlength="255">
 <%= item.description %></textarea
           >
         </div>
         <div class="form__item">
-          <label for="cost">Cost</label>
+          <label for="cost">Cost(€)</label>
           <input
             type="number"
             step="0.01"
@@ -54,7 +58,7 @@
           </select>
         </div>
 
-        <button class="action">Update Item</button>
+        <button class="action">Update</button>
       </form>
     </div>
   </body>

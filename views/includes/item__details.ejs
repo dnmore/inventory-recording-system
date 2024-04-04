@@ -1,15 +1,25 @@
-<article class="item__card">
-  <h2><%= item.name %></h2>
-  <p><%= item.description %></p>
-  <p>Cost: <%= item.cost %></p>
-  <p>Quantity: <%= item.quantity %></p>
-  <p>Category: <%= item.category_title %></p>
+<tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Cost(€)</th>
+  <th>Quantity</th>
+  <th>Category</th>
+  <th>Action</th>
+  <th>Action</th>
+</tr>
 
-  <div class="items__actions">
-    <a href="/items/<%= item.id %>/edit">Edit</a>
-
+<tr>
+  <td><%= item.name %></td>
+  <td><%= item.description %></td>
+  <td><%= item.cost %></td>
+  <td><%= item.quantity %></td>
+  <td><%= item.category_title %></td>
+  <td>
+    <a href="/items/<%= item.id %>/edit" class="primary">Edit</a>
+  </td>
+  <td>
     <form action="/items/<%= item.id %>/delete" method="post">
-      <button class="action-alt">Delete</button>
+      <button class="primary-alt">Delete</button>
     </form>
-  </div>
-</article>
+  </td>
+</tr>

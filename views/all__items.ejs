@@ -5,13 +5,21 @@
   </head>
   <body>
     <%- include('includes/navigation') %>
+    <div class="heading">
+      <h3>All Items</h3>
+    </div>
     <div class="items__container">
-      <h1>All Items</h1>
       <% if(!items || items.length === 0) { %>
-      <p>No items found, maybe start creating some?</p>
-      <a href="/new-item">Create new item</a>
-      <% } else { %> <% for (const item of items) { %> <%-
-      include('includes/item__details', { item: item}) %> <% } %>
+      <div class="empty__message">
+        <p>No items found, maybe start creating some?</p>
+        <a href="/new-item" class="primary">Create new item</a>
+      </div>
+
+      <% } else { %>
+      <table>
+        <% for (const item of items) { %> <%- include('includes/item__details',
+        { item: item}) %> <% } %>
+      </table>
     </div>
     <% } %>
   </body>

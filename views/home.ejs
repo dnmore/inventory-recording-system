@@ -6,11 +6,24 @@
 
   <body>
     <%- include('includes/navigation') %>
-    <div class="actions__content">
-      <h3>Welcome to the Dashboard</h3>
-      <h3>How can we help you?</h3>
-      <button><a href="/new-category">Create Category</a></button>
-      <button><a href="/new-item">Create Item</a></button>
+    <div class="heading">
+      <h3>Welcome to the Dashboard.</h3>
+      <h3>How Can We Help You?</h3>
+    </div>
+
+    <div class="home__container">
+      <div class="action__card">
+        <a href="/categories">View Categories</a>
+      </div>
+      <div class="action__card">
+        <a href="/new-category">Add Category</a>
+      </div>
+      <div class="action__card">
+        <a href="/items">View Items</a>
+      </div>
+      <div class="action__card">
+        <a href="/new-item">Add Item</a>
+      </div>
     </div>
   </body>
 </html>

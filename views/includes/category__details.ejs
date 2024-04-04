@@ -1,11 +1,9 @@
-<article class="category__card">
-  <h2><%= category.title %></h2>
-
-  <div class="categories__actions">
-    <a href="/categories/<%= category.id %>/edit">Edit</a>
-    
+<tr>
+  <td><%= category.title %></td>
+  <td><a href="/categories/<%= category.id %>/edit" class="primary">Edit</a></td>
+  <td>
     <form action="/categories/<%= category.id %>/delete" method="post">
-      <button class="action-alt">Delete</button>
+      <button class="primary-alt">Delete</button>
     </form>
-  </div>
-</article>
+  </td>
+</tr>
