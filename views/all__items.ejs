@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <%- include('includes/head', {title: 'All Items'}) %>
+    <link rel="stylesheet" href="/styles/table.css" />
   </head>
   <body>
     <%- include('includes/navigation') %>
@@ -17,6 +18,15 @@
 
       <% } else { %>
       <table>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Cost(€)</th>
+          <th>Quantity</th>
+          <th>Category</th>
+          <th>Actions</th>
+          <th></th>
+        </tr>
         <% for (const item of items) { %> <%- include('includes/item__details',
         { item: item}) %> <% } %>
       </table>
