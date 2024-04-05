@@ -18,16 +18,18 @@ CRUD (Create, Read, Update, Delete) application built using Node.js, Express.js,
 ## Database Structure
 
 Database named `inventory` with two tables: `items` and `categories`.
-There is a dump in the application directory: **inventory.sql**
+There is a dump in the application directory: **inventory.sql**.
+Insert your MySQL credentials in file `data/database.js`.
 
-## Quick Start
-You can clone the repository and install the dependencies with the following commands:
+## Cloning
+
+You can [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) and install the dependencies with the following command.
 
 ```
-$ git clone https://github.com/dnmore/mySQL-inventory.git
-$ cd mySQL-inventory
 $ npm install
-$ npm start
 
 ```
+## License
+
+MIT
 
