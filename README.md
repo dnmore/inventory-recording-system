@@ -9,11 +9,11 @@ CRUD (Create, Read, Update, Delete) application built using Node.js, Express.js,
 
 ## Stack
 
-- Node.js
-- Express.js
-- EJS
-- MySQL
-- Nodemon
+- `node.js` JavaScript runtime environment
+- `express.js` web framework for node.js
+- `EJS` embedded JavaScript templating
+- `mysql` relational database management system
+- `nodemon` tool automatically restarting the node application when changes are detected
 
 ## Database Structure
 
@@ -29,6 +29,16 @@ You can [clone the repository](https://docs.github.com/en/repositories/creating-
 $ npm install
 
 ```
+
+You can run the following command to start the application
+
+```
+$ npm start
+
+```
+
+The server will be running on port 3000, visit `http://localhost:3000/`
+
 ## License
 
 MIT
