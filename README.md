@@ -1,45 +1,53 @@
-# Inventory Recording System
+# Inventory Recording System - CRUD Application
 
-CRUD (Create, Read, Update, Delete) application built using Node.js, Express.js, EJS templating engine and MySQL database.
+## Overview
+
+This is a CRUD (Create, Read, Update, Delete) application for managing an inventory of items and categories. Built with Node.js, Express.js, and MySQL, it allows users to create and manage inventory records.
 
 ## Features
 
-- Create, Read, Update and Delete Categories to be associated to Items
-- Create, Read, Update the details and associated category and Delete Items
+- Create, view, update, and delete categories
+- Create, view, update, and delete items associated with categories
 
-## Stack
+## Tech Stack
 
-- `node.js` JavaScript runtime environment
-- `express.js` web framework for node.js
-- `EJS` embedded JavaScript templating
-- `mysql` relational database management system
-- `nodemon` tool automatically restarting the node application when changes are detected
+- `Node.js`– Backend runtime environment
+- `Express.js`– Web framework for Node.js
+- `EJS`– Templating engine for dynamic content
+- `MySQL`– Relational database system
+- `Nodemon`– Automatically restarts server upon changes
 
 ## Database Structure
 
-Database named `inventory` with two tables: `items` and `categories`.
-There is a dump in the application directory: **inventory.sql**.
-Insert your MySQL credentials in file `data/database.js`.
+The application uses a MySQL database with two tables: `items` and `categories`. The repository includes a SQL dump file (`inventory.sql`) that can be used to set up the database.
 
-## Cloning
+## Getting Started
+### Installation
 
-You can [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) and install the dependencies with the following command.
+Clone the repository and install the dependencies:
 
 ```
+$ git clone https://github.com/dnmore/inventory-recording-system.git
 $ npm install
 
 ```
 
-You can run the following command to start the application
+### Database Setup
+
+Set up your MySQL database and insert credentials into `data/database.js`.
+
+### Running the Application
+
+Start the server with:
 
 ```
 $ npm start
 
 ```
 
-The server will be running on port 3000, visit `http://localhost:3000/`
+The server will be running at `http://localhost:3000/`
 
 ## License
 
-MIT
+This project is licensed under the MIT License.
 
