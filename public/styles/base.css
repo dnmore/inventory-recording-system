@@ -72,6 +72,36 @@ button {
   place-items: center;
 }
 
+.error__container {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.error__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.error__description {
+  font-size: 1rem;
+}
+
+.action-home {
+  font: inherit;
+  text-transform: uppercase;
+  padding: 0.5rem 0.8rem;
+  padding: 10px 20px;
+  background-color: var(--cl-accent-blue);
+  color: var(--cl-white);
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.action-home:hover {
+  opacity: 0.8;
+}
+
 @media (min-width: 48rem) {
   h3 {
     font-size: var(--fs-size-xl);
