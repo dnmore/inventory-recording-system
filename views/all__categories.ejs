@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <%- include('includes/head', {title: 'All Categories'}) %>
-    <link rel="stylesheet" href="/styles/table.css">
+    <link rel="stylesheet" href="/styles/table.css" />
   </head>
   <body>
     <%- include('includes/navigation') %>
@@ -14,16 +14,18 @@
       <p>No categories found, maybe start creating some?</p>
       <a href="/new-category" class="primary">Create new category</a>
       <% } else { %>
-      <table>
-        <tr>
-          <th>Title</th>
-          <th>Actions</th>
-          <th></th>
-        </tr>
-        <% for (const category of categories) { %>
-        <%-include('includes/category__details', { category: category}) %> <% }
-        %> <% } %>
-      </table>
+      <div class="hscroll">
+        <table width="100%" cellspacing="0" cellpadding="6">
+          <tr>
+            <th>Title</th>
+            <th>Action</th>
+            <th>Action</th>
+          </tr>
+          <% for (const category of categories) { %>
+          <%-include('includes/category__details', { category: category}) %> <%
+          } %> <% } %>
+        </table>
+      </div>
     </div>
   </body>
 </html>

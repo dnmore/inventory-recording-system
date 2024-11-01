@@ -17,19 +17,21 @@
       </div>
 
       <% } else { %>
-      <table>
+        <div class="hscroll">
+      <table width="100%" cellspacing="0" cellpadding="6">
         <tr>
           <th>Name</th>
           <th>Description</th>
           <th>Cost(€)</th>
           <th>Quantity</th>
           <th>Category</th>
-          <th>Actions</th>
-          <th></th>
+          <th>Action</th>
+          <th>Action</th>
         </tr>
         <% for (const item of items) { %> <%- include('includes/item__details',
         { item: item}) %> <% } %>
       </table>
+    </div>
     </div>
     <% } %>
   </body>

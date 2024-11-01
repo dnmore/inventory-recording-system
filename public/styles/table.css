@@ -1,27 +1,28 @@
-table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td,
-  th {
-    border-bottom: 1px solid var(--cl-gray-dark);
-    padding: 8px;
-    text-align: left;
-    text-transform: capitalize;
-    font-size: var(--fs-size-sm);
-  }
-  
-  .primary {
-    color: var(--cl-accent-blue);
-  }
-  
-  .primary-alt {
-    font: inherit;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--cl--accent-red);
-    background-color: transparent;
-    border: none;
-  }
-  
+td,
+th {
+  border-bottom: 1px solid var(--secondary-gray);
+  border-right: 1px solid var(--secondary-gray);
+  padding: 8px;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: var(--fs-size-sm);
+  text-align: center;
+  min-width: 9rem;
+}
+
+.hscroll {
+  overflow-x: auto;
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.primary-alt {
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--alert-color);
+  background-color: transparent;
+  border: none;
+}

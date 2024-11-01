@@ -9,28 +9,36 @@ form {
 
 .form__item {
   margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 label {
   display: block;
-  font-weight: bold;
   margin-bottom: 5px;
+  font-size:var(--fs-size-sm);
+  color:var(--primary-gray);
+  text-transform:uppercase;
 }
 
 input,
 select,
 textarea {
   width: 100%;
-  border: 1px solid var(--cl-gray-dark);
   font: inherit;
+  font-size: var(--fs-size-md);
+  border:1px solid transparent;
   padding: 0.3rem 0.8rem;
   border-radius: 4px;
+  box-shadow: var(--shadow);
+ 
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   outline: none;
+  border:1px solid var(--secondary-color);
 }
 
 input {
@@ -53,8 +61,8 @@ select {
   text-transform: uppercase;
   width: 100%;
   padding: 10px 20px;
-  background-color: var(--cl-accent-blue);
-  color: var(--cl-white);
+  background-color: var(--accent-color);
+  color: var(--white);
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -64,7 +72,7 @@ select {
 }
 
 .error {
-  color: red;
+  color: var(--alert-color);
   font-size: 0.8rem;
-  margin-top: 5px;
+  margin-top: 10px;
 }
